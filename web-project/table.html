@@ -3,50 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        caption {
+            caption-side: top;
+            text-align: right;
+            background-color: #beebe9;
+            font-size: 1.5rem;
+        }
+        table {
+            width: 400px;
+            border: 0px solid red;
+            border-collapse: collapse;
+            text-align:center;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        thead {
+            color: white;
+            background-color: #333333;
+        }
+        tbody {
+            color: blue;
+        }
+        tfoot {
+            color: red;
+        }
+
+        tfoot td {
+            text-align: right;
+        }
+
+        .col2 {
+            width: 50%;
+            height: 2rem;
+        }
+    </style>
 </head>
 <body>
 
 
-
-
-<table border="1">
-  <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-
-
+<table >
+    <caption>Monthly savings</caption>
+    <thead>
+    <tr>
+        <th>Year</th>
+        <th class="col2">Month</th>
+        <th>Savings1</th>
+        <th>Saving2</th>
+    </tr>
+</thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">2024</td>
+        <td>January</td>
+        <td>$100</td>
+        <td>$200</td>
+    </tr>
+    <tr>
+        <td>February</td>
+        <td>$300</td>
+        <td>$400</td>
+    </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+        <td>2024</td>
+        <td>Sum</td>
+        <td colspan="2">1000</td>
+    </tr>
+    </tfoot>
 </table>
 
 
 
-
-<ol type="I">
-        <li>First item</li>
-        <li>2</li>
-    <ul type="a">
-        <li>First item</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-    </ul>
-        <li>3</li>
-        <li>4</li>
-    </ol>
-
-
-
+<!--<table>-->
+<!--    <caption>Monthly savings2</caption>-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>Year</th>-->
+<!--        <th>Month</th>-->
+<!--        <th>Savings1</th>-->
+<!--        <th>Saving2</th>-->
+<!--    </tr>-->
+<!--</thead>-->
+<!--    <tbody>-->
+<!--    <tr>-->
+<!--        <td rowspan="2">2024</td>-->
+<!--        <td>January</td>-->
+<!--        <td colspan="2" rowspan="2">$100</td>-->
+<!--&lt;!&ndash;        <td>$200</td>&ndash;&gt;-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>February</td>-->
+<!--&lt;!&ndash;        <td>$300</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>$400</td>&ndash;&gt;-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--    <tfoot>-->
+<!--        <tr>-->
+<!--        <td>2024</td>-->
+<!--        <td>Sum</td>-->
+<!--        <td colspan="2">1000</td>-->
+<!--    </tr>-->
+<!--    </tfoot>-->
 
 
 </body>
