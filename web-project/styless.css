@@ -1,0 +1,26 @@
+*{
+    margin: 0 auto;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    background: lavender;
+    border: 6px solid black;
+    overflow: auto;
+    outline: green solid 25px;
+    border-bottom: 5px dashed green;
+    border-radius: 15px 10px 5px 0;
+
+}
+
+.inner{
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    height: 50px;
+    border: 6px solid red;
+    background: black;
+}
